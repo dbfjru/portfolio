@@ -129,7 +129,7 @@ button:focus {
 }
 .home__title {
   font-size: 3rem;
-  margin-bottom: 1rem ;
+  margin-bottom: 1rem;
 }
 
 .home__title--strong {
@@ -216,14 +216,14 @@ button:focus {
   color: var(--color-text);
  }
 
- .skills{
+.skills{
   display: grid;
   grid-template-columns: 6fr 4fr;
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
- }
+}
 .skills__title {
   color: var(--color-accent);
   margin: 1rem 0;
@@ -269,9 +269,8 @@ button:focus {
 #work {
   background-color: var(--color-primary);
   color: var(--color-text);
-  margin: 2.5rem;
+  /* margin: 2.5rem; */
 }
-
 .categories {
   display: flex;
   justify-content: center;
@@ -429,4 +428,83 @@ button:focus {
 }
 .contact__link:hover {
   color: var(--color-accent);
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+  .header__menu {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  #home {
+    padding-bottom: 3rem;
+  }
+  .home__title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .majors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .major {
+    max-width: 25rem;
+  }
+
+  .job {
+    justify-content: center;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .categories {
+    flex-direction: column;
+  }
+  .category {
+    width: 100%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial {
+    flex-direction: column;
+  }
+  .testimonial:nth-child(even) .testimonial__img{
+    order: 0;
+  }
+
+  .arrow-up {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;    
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 0px 0px var(--color-accent);
+  }
 }
