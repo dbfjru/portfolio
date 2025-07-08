@@ -18,3 +18,15 @@ document.addEventListener('scroll', () => {
 // addEventListener와 setEventListener 차이
 // addEventListener의 경우 동일한 이벤트에 대해 여러개의 함수 등록 가능
 // setEventListener의 경우는 동일한 이벤트에 하나의 함수만 등록가능
+
+// 아래로 스크롤시, Arrow Up이 나타남, 홈이 절반 가려졌을 때
+const arrow = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if(window.scrollY > homeHeight/2) {
+    console.log('hi');
+    arrow.classList.add('arrow-up--visible');
+  } else {
+    console.log('bye');
+    arrow.classList.remove('arrow-up--visible');
+  }
+})
