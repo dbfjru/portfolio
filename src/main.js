@@ -8,3 +8,13 @@ document.addEventListener('scroll', () => {
     header.classList.remove('header--dark');
   }
 });
+
+// Home 섹션을 아래로 스크롤시, 투명하게 처리함
+const home = document.querySelector('.home__container');
+const homeHeight = home.offsetHeight;
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY/homeHeight;
+})
+// addEventListener와 setEventListener 차이
+// addEventListener의 경우 동일한 이벤트에 대해 여러개의 함수 등록 가능
+// setEventListener의 경우는 동일한 이벤트에 하나의 함수만 등록가능
