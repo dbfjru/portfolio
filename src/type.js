@@ -2,7 +2,7 @@
 
 new TypeIt('.home__title--strong', {
   loop: true,
-  speed: 100,
+  speed: 150,
 }) // Dream Coder
 .move(-11)
 .type('Amazing ')
