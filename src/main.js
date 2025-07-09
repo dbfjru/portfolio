@@ -25,10 +25,10 @@ document.addEventListener('scroll', () => {
 const arrow = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   if(window.scrollY > homeHeight/2) {
-    console.log('hi');
+    // console.log('hi');
     arrow.classList.add('arrow-up--visible');
   } else {
-    console.log('bye');
+    // console.log('bye');
     arrow.classList.remove('arrow-up--visible');
   }
 })
